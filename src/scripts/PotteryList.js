@@ -1,9 +1,9 @@
 import { usePottery } from './PotteryCatalog.js'
 
-// Function to create HTML representation of pottery
+
 export const PotteryList = () => {
-    const potteryItems = usePottery();
-    let potteryHTML = "";
+    const potteryItems = usePottery()
+    let potteryHTML = ""
 
     potteryItems.forEach(item => {
         potteryHTML += `
@@ -14,8 +14,8 @@ export const PotteryList = () => {
             </div>
             <div class="pottery__price">Price is $${item.price}</div>
         </section>
-        `;
-    });
+        `
+    })
 
     return potteryHTML; // Return the complete HTML string
-};
+}
